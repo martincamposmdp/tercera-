@@ -1,0 +1,121 @@
+body {
+  background-color: #272525;
+}
+
+h1 {
+  font-family: "Monserrat";
+  color: transparent;
+  transition: color 0.5s ease;
+}
+h1:hover {
+  color: #d05353;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  height: 100vh;
+  background-color: #272525;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 3fr auto;
+  }
+}
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: first baseline;
+  position: fixed;
+  color: #f1e8b8;
+  font-family: "Monserrat";
+  height: 300px;
+  width: 100%;
+}
+
+.nav-link {
+  flex-grow: 1;
+  display: flex;
+  margin: 0 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #d05353;
+}
+.nav-link:hover {
+  font-size: 2em;
+  color: #e58f65;
+}
+
+.imagenFondo {
+  display: flex;
+  background-color: #272525;
+}
+
+.imagenFondo img {
+  max-width: 100%;
+  height: 60%;
+  border-radius: 70%;
+}
+
+.descripcion {
+  display: flex;
+  background-color: #272525;
+  color: #e58f65;
+  font-size: 20px;
+  font: "Monserrat serif";
+  border: solid 3px #d05353;
+  margin: 20px;
+  padding: 10px;
+}
+
+.grid {
+  margin: 20px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  column-gap: 200px;
+  row-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 400px 400px 400px;
+  color: #e58f65;
+}
+
+.grid img {
+  height: 400px;
+  width: 250x;
+  padding: 20px;
+  margin-top: 20PX;
+  border-radius: 50%;
+}
+.grid img:hover {
+  transform: scale(0.6);
+}
+
+.footcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #f9e784;
+  position: fixed;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: flex;
+  background-color: #272525;
+  color: #d05353;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container img {
+  height: 30px;
+  margin: 25px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
